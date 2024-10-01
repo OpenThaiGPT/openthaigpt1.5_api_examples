@@ -3,6 +3,11 @@ This repository contains examples of how to use the OpenThaiGPT 1.5 API powered 
 
 Author: kobkrit@aieat.or.th
 
+Hosted by: [Float16](https://float16.cloud/)
+
+![image](https://github.com/user-attachments/assets/c48f9cb6-1c03-4cb8-9bc5-7d9e6f3df695)
+
+
 ## Installation
 
 1. Clone this repository:
