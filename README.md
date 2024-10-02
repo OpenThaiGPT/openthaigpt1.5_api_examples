@@ -1,7 +1,10 @@
 # OpenThaiGPT 1.5 API Examples
-This repository contains examples of how to use the OpenThaiGPT 1.5 API powered by Float16.
+This repository contains examples of how to use the OpenThaiGPT 1.5 API via ``openai`` library powered by Siam.AI, Float16.
 
 Author: kobkrit@aieat.or.th
+
+Hosted by: [Siam.AI](https://siam.ai)<br>
+<img src="https://siam.ai/wp-content/uploads/2024/06/logo_SiamAI_full_black_blue.png" alt="Siam.AI logo" width="300">
 
 Hosted by: [Float16](https://float16.cloud/)
 
@@ -21,7 +24,7 @@ Hosted by: [Float16](https://float16.cloud/)
    pip install -r requirements.txt
    ```
 
-## Usage
+## Usage (Float16)
 
 The main example is provided in the `api_generate_powered_by_float16.py` file. Here's how to use it:
 
@@ -41,10 +44,25 @@ The main example is provided in the `api_generate_powered_by_float16.py` file. H
 
 The script demonstrates how to use the OpenAIClient class to generate text using the OpenThaiGPT 1.5 model. You can modify the prompt and other parameters as needed.
 
+## Usage (Siam.AI)
+
+An example for using the API powered by Siam.AI is provided in the `api_generate_powered_by_siamai.py` file. Here's how to use it:
+
+1. Open the `api_generate_powered_by_siamai.py` file.
+
+2. The API base URL is already set to "https://api.aieat.or.th/v1". No API key is required as it uses a dummy key.
+
+3. Run the script:
+   ```
+   python api_generate_powered_by_siamai.py
+   ```
+
+This script demonstrates how to use the OpenAI library to generate text using the OpenThaiGPT 1.5 model hosted by Siam.AI. You can modify the prompt and other parameters as needed.
+
 ## Example Output
 
-The script will print the generated text based on the given prompt. For example:
+The scripts will print the generated text based on the given prompt. For example:
 
 ```
-Generated Text: กรุงเทพมหานคร หรือที่เรียกสั้นๆ ว่า กรุงเทพ คือเมืองหลวงของประเทศไทย มีฐานะเป็นจังหวัดพิเศษ ตั้งอยู่บนที่ราบศุกร์ บริเวณตอนกลางของภาคกลาง มีพื้นที่ประมาณ 1,568.72 ตารางกิโลเมตร ซึ่งเป็นพื้นที่ที่มีประชากรหนาแน่นที่สุดในประเทศไทย มีประชากรประมาณ 10.2 ล้านคน (ปี 2020) กรุงเทพมหานครเป็นศูนย์กลางการเมือง การศึกษา การเงิน การค้า การท่องเที่ยว และเทคโนโลยีสารสนเทศของประเทศ ประกอบด้วยสถานที่สำคัญๆ มากมาย เช่น พระบรมมหาราชวัง พระบรมมหาราชวัง วัดพระแก้ว อนุสาวรีย์ชัยสมรภูมิ อนุสาวรีย์ประชาธิปไตย ตลาดลุมพินี ห้างสรรพสินค้าชั้นนำ ตึกสูง อาคารสำนักงาน รวมถึงสถานที่ท่องเที่ยวและวัฒนธรรมอื่นๆ มากมาย
+Generated Text: กรุงเทพมหานคร หรือ กรุงเทพฯ คือเมืองหลวงของประเทศไทย ซึ่งตั้งอยู่ทางภาคกลางของประเทศ ริมฝั่งแม่น้ำเจ้าพระยา กรุงเทพมหานครเป็นศูนย์กลางการปกครอง การศึกษา การคมนาคมขนส่ง การเงินการธนาคาร การพาณิชย์ การสื่อสาร และวัฒนธรรมของประเทศไทย รวมถึงเป็นศูนย์กลางทางการเมืองและการปกครองของประเทศด้วย กรุงเทพมหานครยังเป็นเมืองที่มีความสำคัญทางประวัติศาสตร์และวัฒนธรรม มีสถานที่ท่องเที่ยวที่สำคัญมากมาย เช่น วัดพระศรีรัตนศาสดาราม (วัดพระแก้ว) วัดโพธิ์ วัดอรุณ พระบรมมหาราชวัง และวังวิมานเมฆ เป็นต้น
 ```
