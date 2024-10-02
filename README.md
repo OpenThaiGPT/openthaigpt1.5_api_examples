@@ -10,7 +10,44 @@ Hosted by: [Float16](https://float16.cloud/)
 
 ![image](https://github.com/user-attachments/assets/c48f9cb6-1c03-4cb8-9bc5-7d9e6f3df695)
 
+# CURL 
+## Siam.AI
+```
+curl https://api.aieat.or.th/v1/completions \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer dummy" \
+  -d '{
+    "model": ".",
+    "prompt": "<|im_start|>system\nคุณคือผู้ช่วยตอบคำถามที่ฉลาดและซื่อสัตย์<|im_end|>\n<|im_start|>user\nกรุงเทพมหานครคืออะไร<|im_end|>\n<|im_start|>assistant\n",
+    "max_tokens": 512,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 40,
+    "stop": ["<|im_end|>"]
+  }'
+```
 
+## Float16
+```
+curl -X POST https://api.float16.cloud/dedicate/78y8fJLuzE/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer float16-AG0F8yNce5s1DiXm1ujcNrTaZquEdaikLwhZBRhyZQNeS7Dv0X" \
+  -d '{
+    "model": "openthaigpt/openthaigpt1.5-7b-instruct",
+    "messages": [
+      {
+        "role": "system",
+        "content": "คุณคือผู้ช่วยตอบคำถามที่ฉลาดและซื่อสัตย์"
+      },
+      {
+        "role": "user",
+        "content": "สวัสดี"
+      }
+    ]
+   }'
+```
+
+# OpenAI Library
 ## Installation
 
 1. Clone this repository:
