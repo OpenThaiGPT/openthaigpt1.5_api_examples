@@ -103,3 +103,45 @@ The scripts will print the generated text based on the given prompt. For example
 ```
 Generated Text: กรุงเทพมหานคร หรือ กรุงเทพฯ คือเมืองหลวงของประเทศไทย ซึ่งตั้งอยู่ทางภาคกลางของประเทศ ริมฝั่งแม่น้ำเจ้าพระยา กรุงเทพมหานครเป็นศูนย์กลางการปกครอง การศึกษา การคมนาคมขนส่ง การเงินการธนาคาร การพาณิชย์ การสื่อสาร และวัฒนธรรมของประเทศไทย รวมถึงเป็นศูนย์กลางทางการเมืองและการปกครองของประเทศด้วย กรุงเทพมหานครยังเป็นเมืองที่มีความสำคัญทางประวัติศาสตร์และวัฒนธรรม มีสถานที่ท่องเที่ยวที่สำคัญมากมาย เช่น วัดพระศรีรัตนศาสดาราม (วัดพระแก้ว) วัดโพธิ์ วัดอรุณ พระบรมมหาราชวัง และวังวิมานเมฆ เป็นต้น
 ```
+
+## Tool Calling with OpenThaiGPT 1.5 (Siam.AI)
+
+An example demonstrating tool calling functionality with OpenThaiGPT 1.5 powered by Siam.AI is provided in the `api_tool_calling_powered_by_siamai.py` file. This script showcases how to use the OpenAI library to interact with the model and execute function calls based on the model's responses.
+
+### Features
+
+- Utilizes the OpenThaiGPT 1.5 model hosted by Siam.AI
+- Demonstrates function calling capabilities
+- Includes example functions for getting current temperature and temperature by date
+- Handles multiple tool calls in a conversation
+
+### Usage
+
+1. Open the `api_tool_calling_powered_by_siamai.py` file.
+
+2. The API base URL is already set to "https://api.aieat.or.th/v1". No API key is required as it uses a dummy key.
+
+3. Run the script:
+   ```
+   python api_tool_calling_powered_by_siamai.py
+   ```
+
+### How it works
+
+1. The script defines two example functions: `get_current_temperature` and `get_temperature_date`.
+2. These functions are registered as tools that the model can call.
+3. A conversation is initiated with a user message asking about the temperature in San Francisco.
+4. The model processes the message and decides whether to call any functions.
+5. If functions are called, their results are added to the conversation.
+6. The process continues until the model provides a final response without calling any functions.
+
+### Example Output
+
+The script will print detailed logs of the conversation, including:
+- Initial messages
+- API calls
+- Function calls and their results
+- The final generated response
+
+This example demonstrates how OpenThaiGPT 1.5 can be used in more complex scenarios requiring external data or computations.
+
