@@ -1,57 +1,6 @@
 import openai
 import json
 
-def get_current_temperature(location: str, unit: str = "celsius"):
-    """Get current temperature at a location.
-
-    Args:
-        location: The location to get the temperature for, in the format "City, State, Country".
-        unit: The unit to return the temperature in. Defaults to "celsius". (choices: ["celsius", "fahrenheit"])
-
-    Returns:
-        the temperature, the location, and the unit in a dict
-    """
-    print(f"Calling get_current_temperature with location: {location}, unit: {unit}")
-    result = {
-        "temperature": 26.1,
-        "location": location,
-        "unit": unit,
-    }
-    print(f"get_current_temperature result: {result}")
-    return result
-
-
-def get_temperature_date(location: str, date: str, unit: str = "celsius"):
-    """Get temperature at a location and date.
-
-    Args:
-        location: The location to get the temperature for, in the format "City, State, Country".
-        date: The date to get the temperature for, in the format "Year-Month-Day".
-        unit: The unit to return the temperature in. Defaults to "celsius". (choices: ["celsius", "fahrenheit"])
-
-    Returns:
-        the temperature, the location, the date and the unit in a dict
-    """
-    print(f"Calling get_temperature_date with location: {location}, date: {date}, unit: {unit}")
-    result = {
-        "temperature": 25.9,
-        "location": location,
-        "date": date,
-        "unit": unit,
-    }
-    print(f"get_temperature_date result: {result}")
-    return result
-
-
-def get_function_by_name(name):
-    print(f"Getting function by name: {name}")
-    if name == "get_current_temperature":
-        return get_current_temperature
-    if name == "get_temperature_date":
-        return get_temperature_date
-    print(f"Function not found: {name}")
-    return None
-
 tools = [
     {
         "type": "function",
