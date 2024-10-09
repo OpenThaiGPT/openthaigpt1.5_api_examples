@@ -52,7 +52,7 @@ curl -X POST https://api.float16.cloud/dedicate/78y8fJLuzE/v1/chat/completions \
 
 1. Clone this repository:
    ```
-   git clone https://github.com/your-username/openthaigpt1.5_api_examples.git
+   git clone https://github.com/OpenThaiGPT/openthaigpt1.5_api_examples.git
    cd openthaigpt1.5_api_examples
    ```
 
